@@ -1,0 +1,101 @@
+<!Doctype html>
+<html lang="en", style="background: url(static/background.png) no-repeat center center fixed; background-size: cover;">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	  <title>24-FRIENDS</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <div id= maindiv>
+      <!-- Image and text -->
+      <nav class="navbar navbar-light" style="background-color:#006994;">
+         <a class="navbar-brand" href="#">
+          <img src="/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="20" class="d-inline-block align-top" alt="">
+         <h1 style="color: white; margin: auto">
+           24-FRIENDS
+         </h1>
+         </a>
+         <form class="form-inline" action="http://localhost:5000/logIn" method="POST">
+            <label class="sr-only" for="inlineFormInputName2">Name</label>
+            <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Email" name="email_logIn" required="yes">
+            <label class="sr-only" for="inlineFormInputGroupUsername2">Email</label>
+            <div class="input-group mb-2 mr-sm-2">
+              <input type="password" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Password" name="password_logIn" required="yes">
+            </div>
+            <button type="submit" class="btn btn-primary mb-2">Log In</button>
+          </form>
+      </nav>
+
+
+      <div id=form style="background-color:	rgba(193, 207, 193, 0.842); width: 700px; position: absolute; top: 1; bottom: 1; left: 0; right: 0; margin:auto; padding: 40px">
+
+        <form action="http://localhost:5000/signUp" method="POST">
+
+          <h2 style="text-align: center">Sign Up</h2><br>
+
+            <div class="age">
+                <b>Age:</b>
+                <input type="radio" id="age" name="age" class="age" value="16-24" required="yes">
+                <label class="age" for="age">16-24</label>
+                <input type="radio" id="age" name="age" class="age" value="25-33" required="yes">
+                <label class="age" for="age">25-33</label>
+                <input type="radio" id="age" name="age" class="age" value="34-42" required="yes">
+                <label class="age" for="age">34-42</label>
+                <input type="radio" id="age" name="age" class="age" value="43+" required="yes">
+                <label class="age" for="age">43+</label>
+              </div>
+
+              <div class="gender">
+                <b>Gender:</b>
+                <input type="radio" id="gender" name="gender" class="gender" value="Male" required="yes">
+                <label class="gender" for="gender">Male</label>
+                <input type="radio" id="gender" name="gender" class="gender" value="Female" required="yes">
+                <label class="gender" for="gender">Female</label>
+                <input type="radio" id="gender" name="gender" class="gender" value="Other" required="yes">
+                <label class="gender" for="gender">Other</label>
+              </div>
+
+              <div class="religion">
+                  <b>Religion:</b>
+                  <input type="radio" id="religion" name="religion" class="religion" value="Christian" required="yes">
+                  <label class="religion" for="gender">Christian</label>
+                  <input type="radio" id="religion" name="religion" class="religion" value="Muslim" required="yes">
+                  <label class="religion" for="religion">Muslim</label>
+                  <input type="radio" id="religion" name="religion" class="religion" value="Other" required="yes">
+                  <label class="religion" for="religion">Other</label>
+                  
+                 
+                </div>
+
+                <label class="sr-only" for="inlineFormInputName2">Name</label>
+                <input type="text" style="border-style:solid; border-width:3px; border-color: rgba(193, 207, 193,0.842);"  class="form-control mb-4 mr-sm-4" id="inlineFormInputName2" placeholder="Profession" name="profession" required="yes">
+                <label class="sr-only" for="inlineFormInputGroupUsername2">Email</label>
+                <div class="input-group mb-4 mr-sm-4">
+                  <input type="text" style="border-style:solid; border-width:3px; border-color: rgba(193, 207, 193,0.842);" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Nationality" name="nationality" required="yes">
+                </div>                
+                <label class="sr-only" for="inlineFormInputName2">Name</label>
+                <input type="text" style="border-style:solid; border-width:3px; border-color: rgba(193, 207, 193,0.842);" class="form-control mb-4 mr-sm-4" id="inlineFormInputName2" placeholder="Email" name="email_signUp" required="yes">
+                <label class="sr-only" for="inlineFormInputGroupUsername2">Email</label>
+                <div class="input-group mb-4 mr-sm-4">
+                  <input type="password" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Password" name="password_signUp" required="yes">
+                </div>
+                <div id=submit style="float: right"><button type="submit" class="btn btn-primary mb-2">Submit</button></div>
+
+        </form>
+
+      </div>
+ 
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+  </body>
+
+  </html>

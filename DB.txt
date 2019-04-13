@@ -1,0 +1,2 @@
+{'age_range': '16-24', 'nationality': 'Ghanaian', 'gender': 'Other', 'religion': 'Muslim', 'profession': 'Student', 'email': 'akyei908@gmail.com', 'password': 'helloworld'}
+{'age_range': '43+', 'nationality': 'Ghanaian', 'gender': 'Other', 'religion': 'Other', 'profession': 'Student', 'email': 'akyei908@gmail.com', 'password': 'wero'}
