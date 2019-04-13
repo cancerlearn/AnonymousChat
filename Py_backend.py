@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, flash, make_response
+import ast
 
 app = Flask(__name__, static_folder='templates\static')
 
@@ -38,13 +39,15 @@ def process_logIn():
                 email = request.form["email_logIn"]
                 password = request.form["password_logIn"]
 
-                file = open("DB.txt","a+")
+                file = open("DB.txt","r")
+                
+                for dict_string in file.readlines():
 
-                for user_data in file.readlines():
+                        user_data = ast.literal_eval(dict_string)
 
                         if email == user_data["email"] and password == user_data["password"]:
-
-                                return render_template("index.html")
+                                print("here")
+                                return render_template("localhost:3000/")
 
                         else:
                                 response = make_response(('Error\n'), {'Invalid user info': 'Invalid user info'})
