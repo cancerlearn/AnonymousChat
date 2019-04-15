@@ -13,12 +13,11 @@
       <!-- Image and text -->
       <nav class="navbar navbar-light" style="background-color:#006994;">
          <a class="navbar-brand" href="#">
-          <img src="/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="20" class="d-inline-block align-top" alt="">
          <h1 style="color: white; margin: auto">
            24-FRIENDS
          </h1>
          </a>
-         <form class="form-inline" action="http://localhost:5000/logIn" method="POST">
+         <form class="form-inline" action="http://localhost:5000/logIn" method="GET">
             <label class="sr-only" for="inlineFormInputName2">Name</label>
             <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Email" name="email_logIn" required="yes">
             <label class="sr-only" for="inlineFormInputGroupUsername2">Email</label>
@@ -30,7 +29,8 @@
       </nav>
 
 
-      <div id=form style="background-color:	rgba(193, 207, 193, 0.842); width: 700px; height: 60%; position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin:auto; padding: 40px">
+      <div id=form style="background-color:	rgba(193, 207, 193, 0.842); width: 700px; height: 60%; position: absolute; top: 0; bottom: 0; left: 0; right: 0; 
+      margin:auto; padding: 40px; border-radius: 25px; border: 2px solid #73AD21;">
 
         <form action="http://localhost:5000/signUp" method="POST">
 

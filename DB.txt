@@ -1,2 +1,5 @@
 {'age_range': '25-33', 'nationality': 'Ghanaian', 'gender': 'Female', 'religion': 'Muslim', 'profession': 'Student', 'email': 'michael@gmail.com', 'password': 'mmmm'}
 {'age_range': '16-24', 'nationality': 'Ghanaian', 'gender': 'Male', 'religion': 'Muslim', 'profession': 'Student', 'email': 'akyei908@gmail.com', 'password': 'rrrr'}
+{'age_range': '16-24', 'nationality': 'Ghanaian', 'gender': 'Male', 'religion': 'Other', 'profession': 'Student', 'email': 'williamkyei@hotmail.com', 'password': 'tita'}
+{'age_range': '43+', 'nationality': 'Ghanaian', 'gender': 'Male', 'religion': 'Christian', 'profession': 'None', 'email': 'qwerty@gmail.com', 'password': 'qwerty'}
+{'age_range': '16-24', 'nationality': 'Ghanaian', 'gender': 'Male', 'religion': 'Christian', 'profession': 'Student', 'email': '24friend@gmail.com', 'password': 'qqqq'}
